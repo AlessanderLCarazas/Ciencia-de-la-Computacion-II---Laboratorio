@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,res;
+    cout<<"Ingrese el primer numero: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero: ";
+    cin>>b;
+    res=a*b;
+    cout<<"El producto de los numeros es: "<<res<<endl;
+    return 0;
+}
