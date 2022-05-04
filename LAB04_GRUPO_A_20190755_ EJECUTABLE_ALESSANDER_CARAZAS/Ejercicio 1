@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string nombres[3];
+    string apellidos[3];
+    int edad[3];
+    int dni[3];
+    cout << "INGRESO DE DATOS: \n";
+    for(int i = 0; i < 3; i++)
+    {
+        cout << "\n******* Persona " << i + 1 << "********:\n";
+        cout << "Nombres: ";
+        cin.ignore();
+        getline(cin, nombres[i]);
+        cout << "Apellidos: ";
+        cin.ignore();
+        getline(cin, apellidos[i]);
+        cout << "Edad: ";
+        cin>>edad[i];
+        cout << "DNI: ";
+        cin>>dni[i];
+    }
+    cout << "\n==========================: \n";
+    cout << "MUESTRA DE DATOS: \n";
+    cout << "\n==========================: \n";
+    for(int i = 0; i < 3; i++)
+    {
+        cout << "\tPersona " << i + 1 << ":\n";
+        cout << "Nombres: ";
+        cout << nombres[i]<<endl;
+        cout << "Apellidos: ";
+        cout << apellidos[i]<<endl;
+        cout << "Edad: ";
+        cout << edad[i]<<endl;
+        cout << "DNI: ";
+        cout << dni[i]<<endl;
+        cout << "\n==========================: \n";
+    }
+    return 0;
+}
